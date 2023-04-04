@@ -1,0 +1,156 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>barcodeSettings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>
+      {{message}}
+    </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+      {{message2}}
+    </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+      {{message3}}
+    </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+      <b>Edit enabled barcode types:</b>
+    </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ keyboardWedge.enable }}" [(ngModel)]="keyboardWedge.enable"></ion-checkbox>
+    <ion-label>keyboardWedge</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ aztec.enable }}" [(ngModel)]="aztec.enable"></ion-checkbox>
+    <ion-label>aztec</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ codabar.enable }}" [(ngModel)]="codabar.enable"></ion-checkbox>
+    <ion-label>codabar</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ code128.enable }}" [(ngModel)]="code128.enable"></ion-checkbox>
+    <ion-label>code128</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ code39.enable }}" [(ngModel)]="code39.enable"></ion-checkbox>
+    <ion-label>code39</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ code93.enable }}" [(ngModel)]="code93.enable"></ion-checkbox>
+    <ion-label>code93</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ composite.enable }}" [(ngModel)]="composite.enable"></ion-checkbox>
+    <ion-label>composite</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ datamatrix.enable }}" [(ngModel)]="datamatrix.enable"></ion-checkbox>
+    <ion-label>datamatrix</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ digimarc.enable }}" [(ngModel)]="digimarc.enable"></ion-checkbox>
+    <ion-label>digimarc</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ discrete25.enable }}" [(ngModel)]="discrete25.enable"></ion-checkbox>
+    <ion-label>discrete25</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ ean13.enable }}" [(ngModel)]="ean13.enable"></ion-checkbox>
+    <ion-label>ean13</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ ean8.enable }}" [(ngModel)]="ean8.enable"></ion-checkbox>
+    <ion-label>ean8</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ gs1DataBar_14.enable }}" [(ngModel)]="gs1DataBar_14.enable"></ion-checkbox>
+    <ion-label>gs1DataBar_14</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ gs1DataBar_Expanded.enable }}" [(ngModel)]="gs1DataBar_Expanded.enable"></ion-checkbox>
+    <ion-label>gs1DataBar_Expanded</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ gs1DataBar_Limited.enable }}" [(ngModel)]="gs1DataBar_Limited.enable"></ion-checkbox>
+    <ion-label>gs1DataBar_Limited</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ interleaved25.enable }}" [(ngModel)]="interleaved25.enable"></ion-checkbox>
+    <ion-label>interleaved25</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ matrix25.enable }}" [(ngModel)]="matrix25.enable"></ion-checkbox>
+    <ion-label>matrix25</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ maxicode.enable }}" [(ngModel)]="maxicode.enable"></ion-checkbox>
+    <ion-label>maxicode</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ microQr.enable }}" [(ngModel)]="microQr.enable"></ion-checkbox>
+    <ion-label>microQr</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ micropdf417.enable }}" [(ngModel)]="micropdf417.enable"></ion-checkbox>
+    <ion-label>micropdf417</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ msi.enable }}" [(ngModel)]="msi.enable"></ion-checkbox>
+    <ion-label>msi</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ p4State.enable }}" [(ngModel)]="p4State.enable"></ion-checkbox>
+    <ion-label>p4State</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ pAus.enable }}" [(ngModel)]="pAus.enable"></ion-checkbox>
+    <ion-label>pAus</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ pJap.enable }}" [(ngModel)]="pJap.enable"></ion-checkbox>
+    <ion-label>pJap</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ pKix.enable }}" [(ngModel)]="pKix.enable"></ion-checkbox>
+    <ion-label>pKix</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ pPlanet.enable }}" [(ngModel)]="pPlanet.enable"></ion-checkbox>
+    <ion-label>pPlanet</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ pPostnet.enable }}" [(ngModel)]="pPostnet.enable"></ion-checkbox>
+    <ion-label>pPostnet</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ pRM.enable }}" [(ngModel)]="pRM.enable"></ion-checkbox>
+    <ion-label>pRM</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ pdf417.enable }}" [(ngModel)]="pdf417.enable"></ion-checkbox>
+    <ion-label>pdf417</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ qrCode.enable }}" [(ngModel)]="qrCode.enable"></ion-checkbox>
+    <ion-label>qrCode</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ upcA.enable }}" [(ngModel)]="upcA.enable"></ion-checkbox>
+    <ion-label>upcA</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox (click)="saveSetting()" slot="start" checked="{{ upcE.enable }}" [(ngModel)]="upcE.enable"></ion-checkbox>
+    <ion-label>upcE</ion-label>
+  </ion-item>
+</ion-content>
